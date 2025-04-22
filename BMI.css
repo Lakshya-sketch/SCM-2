@@ -30,7 +30,7 @@
   
     /* Spacing (8px system) */
     --spacing-xs: 8px;
-    --spacing-sm: 16px;
+    --spacing-sm: 17px;
     --spacing-md: 24px;
     --spacing-lg: 32px;
     --spacing-xl: 48px;
@@ -77,9 +77,6 @@
     font-family: inherit;
   }
   
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
   
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
