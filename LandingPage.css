@@ -16,18 +16,19 @@ body, html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('wallpaperflare.com_wallpaper.jpg') no-repeat center center/cover;
+    background: url('pexels-pixabay-289586.jpg') no-repeat center center/cover;
     z-index: -1;
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    left: 10vw;
     align-items: center;
     height: 100vh;
     position: relative;
     z-index: 1;
 }
+
 
 .login-box {
     background-color: rgba(255, 255, 255, 0.85);
@@ -36,7 +37,7 @@ body, html {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     width: 300px;
     text-align: center;
-    opacity: 0.95;
+    opacity: 0.8;
 }
 
 .login-box h2 {
