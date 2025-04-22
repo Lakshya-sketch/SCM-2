@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
+    <link rel="stylesheet" href="LandingPage.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <div class="background">
-        <img src="wallpaperflare.com_wallpaper.jpg">
-        <form>
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-            <input type="submit" value="Login">
-        </form>
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
     </div>
 </body>
 </html>
