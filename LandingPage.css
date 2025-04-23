@@ -25,29 +25,33 @@ body, html {
     left: 10vw;
     align-items: center;
     height: 100vh;
+    padding-right: 100px; /* Add space from right edge */
     position: relative;
     z-index: 1;
 }
 
 
 .login-box {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(89, 223, 194, 0.858);
     padding: 30px 40px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    width: 300px;
+    height: 500px;
+    width: 400px;
     text-align: center;
     opacity: 0.8;
 }
 
 .login-box h2 {
     margin-bottom: 20px;
+    padding-top: 15px;
 }
 
 .login-box label {
     display: block;
     margin: 10px 0 5px;
     text-align: left;
+    padding-top: 15px;
 }
 
 .login-box input[type="text"],
@@ -57,19 +61,22 @@ body, html {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    padding-top: 15px;
 }
 
 .login-box input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #5c67f2;
+    background-color: #0011ff;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding-top: 15px;
 }
 
 .login-box input[type="submit"]:hover {
     background-color: #4a54e1;
+    padding-top: 15px;
 }
