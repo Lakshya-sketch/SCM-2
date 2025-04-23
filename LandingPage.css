@@ -9,6 +9,7 @@ body, html {
     height: 100%;
     width: 100%;
     position: relative; /* Needed for absolute positioning of navbar if used */
+    overflow: hidden; /* Prevents scrolling */
 }
 
 .background {
