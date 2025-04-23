@@ -4,28 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Calculator</title>
+  <!-- Ensure the CSS file name matches -->
   <link rel="stylesheet" href="BMI.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>BMI Calculator</h1>
+      <h1 style="font-family: Algerian; font-weight: bold;">BMI Calculator</h1>
       <p class="subtitle">Calculate & track your Body Mass Index</p>
     </header>
 
     <main>
       <div class="calculator-card">
         <div class="unit-toggle">
-          <button class="unit-btn active" data-unit="metric">Metric</button>
-          <button class="unit-btn" data-unit="imperial">Imperial</button>
+          <button type="button" class="unit-btn active" data-unit="metric">Metric</button>
+          <button type="button" class="unit-btn" data-unit="imperial">Imperial</button>
         </div>
 
         <div class="input-group metric">
           <div class="input-wrapper">
             <label for="height">Height</label>
             <div class="input-with-unit">
-              <input type="number" id="height" placeholder="0">
+              <!-- Added min="0" for basic validation -->
+              <input type="number" id="height" placeholder="0" min="0">
               <span class="unit">cm</span>
             </div>
           </div>
@@ -33,7 +35,8 @@
           <div class="input-wrapper">
             <label for="weight">Weight</label>
             <div class="input-with-unit">
-              <input type="number" id="weight" placeholder="0">
+              <!-- Added min="0" for basic validation -->
+              <input type="number" id="weight" placeholder="0" min="0">
               <span class="unit">kg</span>
             </div>
           </div>
@@ -44,11 +47,13 @@
             <label for="feet">Height</label>
             <div class="imperial-height">
               <div class="input-with-unit">
-                <input type="number" id="feet" placeholder="0">
+                <!-- Added min="0" for basic validation -->
+                <input type="number" id="feet" placeholder="0" min="0">
                 <span class="unit">ft</span>
               </div>
               <div class="input-with-unit">
-                <input type="number" id="inches" placeholder="0">
+                <!-- Added min="0" for basic validation -->
+                <input type="number" id="inches" placeholder="0" min="0">
                 <span class="unit">in</span>
               </div>
             </div>
@@ -57,21 +62,25 @@
           <div class="input-wrapper">
             <label for="pounds">Weight</label>
             <div class="input-with-unit">
-              <input type="number" id="pounds" placeholder="0">
+              <!-- Added min="0" for basic validation -->
+              <input type="number" id="pounds" placeholder="0" min="0">
               <span class="unit">lb</span>
             </div>
           </div>
         </div>
 
-        <button id="calculate-btn">Calculate BMI</button>
+        <button type="button" id="calculate-btn">Calculate BMI</button>
+        <!-- Placeholder for potential error messages added in JS -->
+        <div class="error-message-container"></div>
       </div>
 
-      <div id="result-section" class="result-card hidden">
+      <!-- Added aria-live for screen reader announcements -->
+      <div id="result-section" class="result-card hidden" aria-live="polite">
         <div class="result-header">
           <h2>Your Result</h2>
           <span id="date-calculated"></span>
         </div>
-        
+
         <div class="result-value">
           <div class="bmi-value" id="bmi-value">0.0</div>
           <div class="bmi-category" id="bmi-category">-</div>
@@ -105,11 +114,11 @@
           Enter your height and weight to get personalized recommendations.
         </div>
 
-        <button id="save-result" class="save-btn">Save Result</button>
+        <button type="button" id="save-result" class="save-btn">Save Result</button>
       </div>
 
       <div class="history-card">
-        <h2>History</h2>
+        <h2 style="font-family: Algerian;">History</h2>
         <div id="history-list" class="history-list">
           <p class="empty-history">No saved records yet.</p>
         </div>
@@ -117,11 +126,11 @@
     </main>
 
     <div class="info-section">
-      <h2>About BMI</h2>
+    <h2 style="font-family: Algerian;">About BMI</h2>
       <p>
         Body Mass Index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
       </p>
-      
+
       <div class="bmi-categories">
         <div class="category-item underweight">
           <h3>Underweight</h3>
@@ -143,7 +152,7 @@
 
       <div class="disclaimer">
         <p>
-          This calculator provides a BMI estimate and should not replace professional medical advice. 
+          This calculator provides a BMI estimate and should not replace professional medical advice.
           Consult with a healthcare provider for a complete health assessment.
         </p>
       </div>
@@ -154,6 +163,7 @@
     </footer>
   </div>
 
+  <!-- Ensure the JS file name matches -->
   <script src="BMI.js"></script>
 </body>
 </html>
