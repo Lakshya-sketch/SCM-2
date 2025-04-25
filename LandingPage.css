@@ -8,8 +8,8 @@
 body, html {
     height: 100%;
     width: 100%;
-    position: relative; /* Needed for absolute positioning of navbar if used */
-    overflow: hidden; /* Prevents scrolling */
+    position: relative;
+    overflow: hidden;
 }
 
 .background {
@@ -19,21 +19,20 @@ body, html {
     width: 100vw;
     height: 100vh;
     background: url('pexels-pixabay-289586.jpg') no-repeat center center/cover;
-    z-index: -1; /* Keep background behind everything */
+    z-index: -1;
 }
 
 /* Navbar Styles */
 .navbar {
-    /* position: fixed; */ /* Uncomment if you want it to stick on scroll */
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    padding: 15px 50px; /* Vertical and horizontal padding */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 50px;
     display: flex;
-    justify-content: space-between; /* Pushes logo left, links right */
-    align-items: center; /* Vertically aligns items */
-    z-index: 10; /* Ensure navbar is above other content */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
     color: white;
 }
 
@@ -43,12 +42,12 @@ body, html {
 }
 
 .navbar .nav-links {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     display: flex;
 }
 
 .navbar .nav-links li {
-    margin-left: 25px; /* Spacing between links */
+    margin-left: 25px;
 }
 
 .navbar .nav-links a {
@@ -61,19 +60,18 @@ body, html {
 }
 
 .navbar .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slight highlight on hover */
-    color: #f0f0f0; /* Slightly lighter text on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f0f0f0;
 }
-/* End Navbar Styles */
 
-
+/* Container and Login Box */
 .container {
     display: flex;
-    justify-content: flex-end; /* Shift content to the right */
+    justify-content: flex-end;
     align-items: center;
-    min-height: 100vh; /* Use min-height instead of height to accommodate navbar */
-    padding-right: 100px; /* Add space from right edge */
-    padding-top: 70px; /* Add padding to push content below navbar (adjust as needed based on navbar height) */
+    min-height: 100vh;
+    padding-right: 100px;
+    padding-top: 70px;
     position: relative;
     z-index: 1;
 }
@@ -86,13 +84,13 @@ body, html {
     height: 500px;
     width: 400px;
     text-align: center;
-    opacity: 0.9; /* Slightly increased opacity */
+    opacity: 0.9;
 }
 
 .login-box h2 {
     margin-bottom: 20px;
     padding-top: 15px;
-    color: #333; /* Darker heading color for better contrast */
+    color: #333;
 }
 
 .login-box label {
@@ -100,33 +98,44 @@ body, html {
     margin: 10px 0 5px;
     text-align: left;
     padding-top: 15px;
-    color: #555; /* Slightly darker label color */
+    color: #555;
 }
 
 .login-box input[type="text"],
 .login-box input[type="password"] {
     width: 100%;
-    padding: 12px; /* Increased padding */
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    /* padding-top removed as padding shorthand is used above */
 }
 
 .login-box input[type="submit"] {
     width: 100%;
-    padding: 12px; /* Increased padding */
+    padding: 12px;
     background-color: #5c67f2;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 15px; /* Added margin-top for spacing */
-    font-size: 1.1em; /* Slightly larger font */
-    /* padding-top removed */
+    margin-top: 15px;
+    font-size: 1.1em;
 }
 
 .login-box input[type="submit"]:hover {
     background-color: #4a54e1;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    z-index: 10;
 }
