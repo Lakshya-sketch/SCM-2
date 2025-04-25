@@ -84,8 +84,8 @@ h1, h2, h3, h4, h5, h6 {
 input, button {
   font-family: inherit;
 }
-
-navbar {
+/* Corrected Navbar Styles */
+.navbar { /* Changed from 'navbar' to '.navbar' */
   /* position: fixed; */ /* Uncomment if you want it to stick on scroll */
   top: 0;
   left: 0;
@@ -98,6 +98,8 @@ navbar {
   z-index: 10; /* Ensure navbar is above other content */
   color: white;
 }
+
+/* The rest of the .navbar child styles (.logo, .nav-links, etc.) are correctly using the class selector and should remain as they are. */
 
 .navbar .logo {
   font-size: 1.8em;
