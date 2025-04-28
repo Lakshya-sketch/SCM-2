@@ -24,6 +24,10 @@ h1, h2 {
 }
 
 /* Paragraphs and List */
+h1:hover, h2:hover {
+    text-shadow: 1px 1px 6px #b0c4de;
+}
+
 p, li {
     color: #555;
     line-height: 1.6;
