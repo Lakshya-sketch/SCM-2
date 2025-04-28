@@ -54,8 +54,12 @@ hr {
     border-top: 2px solid #3498db;
     margin: 32px 0;
 }
-
-
+footer {
+    text-align: center;
+    color: #888;
+    margin-top: 40px;
+    font-size: 0.95em;
+}
 
 .btn:hover {
     background-color: #2980b9;
