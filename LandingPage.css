@@ -1,8 +1,9 @@
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body, html {
@@ -12,6 +13,7 @@ body, html {
     overflow: hidden;
 }
 
+/* Background Image */
 .background {
     position: fixed;
     top: 0;
