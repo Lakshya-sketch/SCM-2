@@ -15,6 +15,13 @@
   --color-warning-light: #ffb340;
   --color-error: #ff3b30;
   --color-error-light: #ff645b;
+   /* Neutral Colors */
+  --color-background: #ffffff;
+  --color-text: #1d1d1f;
+  --color-text-secondary: #86868b;
+  --color-card: #ffffff;
+  --color-border: #d2d2d7;
+  
   
  
   /* BMI Category Colors */
