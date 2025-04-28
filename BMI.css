@@ -1,6 +1,11 @@
 /* Base Styles */
 :root {
   /* Color System */
+    --color-primary: #0071e3;
+  --color-primary-light: #4d9ff6;
+  --color-primary-dark: #0057b7;
+  --color-secondary: #f5f5f7;
+  --color-accent: #86868b;
 
   
   /* Success, Warning, Error Colors */
