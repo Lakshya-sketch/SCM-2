@@ -120,14 +120,14 @@ function clearInputErrors() {
     });
     clearInputError(); // Clear the general message as well
 }
-
+// ghfjdksl
 // Clear inputs and errors together
 function clearInputsAndErrors() {
     clearInputs();
     clearInputErrors();
 }
 
-
+// gfdsa
 // Validate a single numeric input visually
 function validateInput(input) {
   const value = parseFloat(input.value);
